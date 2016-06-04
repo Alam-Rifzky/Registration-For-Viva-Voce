@@ -1,0 +1,100 @@
+<?php
+require 'fpdf/fpdf.php';
+$nama='';
+$npm='';
+$jurusan='';
+$pdf=new FPDF();
+$pdf->AddPage();
+$pdf->SetFont('Arial','B', 16);
+$pdf->Cell(185, 3, 'Lembaran Isian Foto D3', 0, 6, "C");
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Ln();
+$pdf->SetFont('Arial','', 14);
+$pdf->Cell(20);
+$pdf->Cell(20, 4, 'Nama', 0, 0, 'L');
+$pdf->Cell(30);
+$pdf->Cell(5, 5, ':', 0, 0, 'L');
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(20);
+$pdf->Cell(20, 4, 'N.P.M', 0, 0, 'L');
+$pdf->Cell(30);
+$pdf->Cell(5, 5, ':', 0, 0, 'L');
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(20);
+$pdf->Cell(30, 4, 'Tempat/Tgl.Lahir', 0, 0, 'L');
+$pdf->Cell(20);
+$pdf->Cell(5, 5, ':', 0, 0, 'L');
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(20);
+$pdf->Cell(30, 4, 'Alamat Lengkap', 0, 0, 'L');
+$pdf->Cell(20);
+$pdf->Cell(5, 5, ':', 0, 0, 'L');
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(20);
+$pdf->Cell(30, 4, 'No.Telp', 0, 0, 'L');
+$pdf->Cell(20);
+$pdf->Cell(5, 5, ':', 0, 0, 'L');
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(20);
+$pdf->Cell(30, 4, 'Tgl. Sidang I', 0, 0, 'L');
+$pdf->Cell(20);
+$pdf->Cell(5, 5, ':', 0, 0, 'L');
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(20);
+$pdf->Cell(30, 4, 'Tgl.Lulus', 0, 0, 'L');
+$pdf->Cell(20);
+$pdf->Cell(5, 5, ':', 0, 0, 'L');
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(20);
+$pdf->Cell(30, 4, 'Email', 0, 0, 'L');
+$pdf->Cell(20);
+$pdf->Cell(5, 5, ':', 0, 0, 'L');
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(50);
+$pdf->Cell(15, 5, '2X3', 0, 0, "L");
+$pdf->Cell(25);
+$pdf->Cell(15, 5, '2X3', 0, 0, "L");
+$pdf->Ln();
+//foto
+$pdf->Rect(55, 115, 20, 25);
+$pdf->Rect(95, 115, 20, 25);
+$pdf->Ln();
+
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Ln();
+$pdf->SetFont('Arial','BU', 12);
+$pdf->Cell(185, 4, 'Perhatian :', 0, 2, "L");
+$pdf->Ln();
+$pdf->SetFont('Arial','', 12);
+$pdf->Cell(185, 4, 'Foto Hitam Putih', 0, 2, "L");
+$pdf->Ln();
+$pdf->SetFont('Arial','', 12);
+$pdf->Cell(185, 4, 'Bagi Pria, diharuskan mengenakan kemeja putih dan berdasi, rambut pendek', 0, 2, "L");
+$pdf->Ln();
+$pdf->SetFont('Arial','', 12);
+$pdf->Cell(185, 4, 'Bagi wanita, diharuskan mengenakan blus putih', 0, 2, "L");
+
+
+
+
+$pdf->Output();
+
+?>

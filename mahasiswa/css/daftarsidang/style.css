@@ -1,0 +1,44 @@
+#form{
+	width: 500px;
+	background-color: rebeccapurple;
+	height: 500;
+	margin: 0 auto;
+
+}
+
+#logout{
+	position : absolute;
+	top: 70px;
+	right: 70px;
+}
+
+table tr,td{
+	padding: 10px;
+}
+
+#btnUnggah{
+	width: 200;
+	height :50;
+	color: #fff;		
+	background-color: cornflowerblue;
+	border-color: cornsilk;
+}
+
+#judulForm{
+	background: darkgrey;
+	height: 45px;
+}
+
+#btnCari{
+color: #fff;
+background-color: cornflowerblue;
+border-color: cornsilk;
+
+}
+
+#q{
+font-family: inherit;
+font-size: smaller;
+line-height: normal;
+
+}
